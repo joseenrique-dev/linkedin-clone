@@ -29,7 +29,7 @@ export const Login = ({ props }: IProps) => {
         </div>
       </div>
       <div className='m-auto'>
-        <div className='w-10/12 bg-gray-100 border border-slate-500 font-medium text-slate-700 border-b-gray-600 rounded-full flex justify-center flex-nowrap mx-3.5 py-2 px-10'>
+        <div className='w-10/12 lg:w-1/4 md:w-1/2 lg:ml-15 bg-gray-100 border border-slate-500 font-medium text-slate-700 border-b-gray-600 rounded-full flex justify-center flex-nowrap mx-3.5 py-2 px-10'>
           <img src='/images/google.svg' alt='' className='mr-1' />
           Sign in with Google
         </div>
