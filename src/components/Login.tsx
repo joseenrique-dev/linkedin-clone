@@ -7,17 +7,25 @@ type IProps = {
 export const Login = ({ props }: IProps) => {
   return (
     <>
-      <div className='ml-2 py-2 flex justify-between flex-nowrap relative content-center'>
-        <a href='/' className='w-40 h-5'>
+      <div className='ml-2 py-7 flex justify-around flex-nowrap relative content-center'>
+        <a href='/' className='w-24 sm:w-40 h-5'>
           <img src='/images/login-logo.svg' alt='' />
         </a>
         <div className='flex'>
-          <div className='text-xl px-2.5 py-3 font-sans text-gray-500 cursor-pointer hover:bg-zinc-200 hover:rounded-md hover:text-black'>
+          <div className='pt-3 invisible  lg:visible sm:text-xl text-sm px-2 font-sans text-gray-500 cursor-pointer hover:bg-zinc-200 hover:rounded-md hover:text-black mr-5'>
             Join now
           </div>
-          <div className='border-rose-900 px-2.5 py-3 mr-4 text-xl text-blue-600 '>
+          <div className='border rounded-full sm:leading-20 lg:py-2 lg:px-6 py-1 px-3 sm:pt-1  border-blue-600  mr-4 sm:text-xl text-sm text-blue-600 font-semibold hover:border-2 hover:bg-blue-50 cursor-pointer'>
             Sign In
           </div>
+        </div>
+      </div>
+      <div className='grid lg:grid-cols-2'>
+        <p className='w-full  leading-snug lg:ml-16 px-5  text-gray-500 font-light text-3xl lg:text-6xl'>
+          Welcome to your professional community
+        </p>
+        <div className='w-5/12 py-10 mx-auto'>
+          <img src='/images/login-hero.svg' alt='' />
         </div>
       </div>
     </>
