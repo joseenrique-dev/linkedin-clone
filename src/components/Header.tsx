@@ -2,13 +2,17 @@ import React from 'react';
 
 const Header = () => {
   return (
+    // CONTAINER
     <div className='w-full bg-white z-50'>
+      {/* CONTENT */}
       <div className='border border-b-gray-300 flex grow'>
+        {/* LOGO */}
         <div className='pl-24 py-1.5'>
           <a href='/home'>
             <img src='/images/home-logo.svg' alt='' />
           </a>
         </div>
+        {/* SEARCH */}
         <div className='relative'>
           <label className='relative block pl-2'>
             <span className='sr-only'>Search</span>
@@ -26,15 +30,65 @@ const Header = () => {
             <img src='/images/search-icon.svg' alt='' />
           </div>
         </div>
-        <div className='flex items-center'>
-          <div>
+        {/* NAV */}
+        <div className='flex bottom-0 fixed lg:static w-full justify-around'>
+          {/* NAVLISTWRAP */}
+          <div className='px-2.5 flex justify-center'>
             <a
-              className='flex flex-col no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
+              className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
             >
-              <img src='/images/nav-home.svg' alt='' />
+              <img src='/images/nav-home.svg' alt='' className='m-auto' />
               <span className='text-normalTextHeader hover:text-focusTextHeader active:text-focusTextHeader'>
                 Home
+              </span>
+            </a>
+          </div>
+          <div className='px-2.5 '>
+            <a
+              className='no-underline leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
+              href='/'
+            >
+              <img src='/images/nav-network.svg' alt='' className='m-auto' />
+              <span className='text-normalTextHeader hover:text-focusTextHeader active:text-focusTextHeader'>
+                My Network
+              </span>
+            </a>
+          </div>
+          <div className='px-2.5'>
+            <a
+              className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
+              href='/'
+            >
+              <img src='/images/nav-jobs.svg' alt='' className='m-auto' />
+              <span className='text-normalTextHeader hover:text-focusTextHeader active:text-focusTextHeader'>
+                Jobs
+              </span>
+            </a>
+          </div>
+          <div className='px-2.5'>
+            <a
+              className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
+              href='/'
+            >
+              <img src='/images/nav-messaging.svg' alt='' className='m-auto' />
+              <span className='text-normalTextHeader hover:text-focusTextHeader active:text-focusTextHeader'>
+                Messaging
+              </span>
+            </a>
+          </div>
+          <div className='px-2.5'>
+            <a
+              className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
+              href='/'
+            >
+              <img
+                src='/images/nav-notifications.svg'
+                alt=''
+                className='m-auto'
+              />
+              <span className='text-normalTextHeader hover:text-focusTextHeader active:text-focusTextHeader'>
+                Notifications
               </span>
             </a>
           </div>
