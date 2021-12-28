@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
   return (
     // CONTAINER
-    <div className='w-full bg-white z-50 fixed left-0 px-5 border border-b-gray-300'>
+    <div className='w-screen bg-white z-50 left-0 px-5 border border-b-gray-300 '>
       {/* CONTENT */}
       <div className='flex grow'>
         {/* LOGO */}
@@ -31,7 +31,7 @@ const Header = () => {
           </div>
         </div>
         {/* NAV */}
-        <div className='flex bottom-0 fixed lg:static w-full justify-around left-0'>
+        <div className='flex bottom-0 fixed lg:static sm:min-w-full min-w-full  md:min-w-full justify-around left-0'>
           {/* NAVLISTWRAP */}
           <div className='px-2.5 flex justify-center'>
             <a
