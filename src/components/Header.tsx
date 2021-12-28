@@ -3,13 +3,13 @@ import React from 'react';
 const Header = () => {
   return (
     // CONTAINER
-    <div className='w-full bg-white z-50'>
+    <div className='w-full bg-white z-50 fixed left-0 px-5 border border-b-gray-300'>
       {/* CONTENT */}
-      <div className='border border-b-gray-300 flex grow'>
+      <div className='flex grow'>
         {/* LOGO */}
-        <div className='pl-24 py-1.5'>
+        <div className='mr-0'>
           <a href='/home'>
-            <img src='/images/home-logo.svg' alt='' />
+            <img src='/images/home-logo.svg' alt='' className='max-w-none' />
           </a>
         </div>
         {/* SEARCH */}
@@ -20,7 +20,7 @@ const Header = () => {
               <svg className='h-5 w-5 fill-gray-300' viewBox='0 0 20 20'></svg>
             </span>
             <input
-              className='placeholder:text-gray-400 block bg-gray-200 w-full border rounded-sd py-1.5 pl-9 pr-3 shadow-sm focus:outline-none focus:border-gray-300 focus:ring-gray-300 focus:border focus:w-80 focus:ring-1 sm:text-sm'
+              className='placeholder:text-placeholderSearchColor w-56  pr-4 pl-10 h-9    leading-7 block bg-inputSearchBackground border rounded-sd   shadow-sm focus:outline-none focus:border-gray-300 focus:ring-gray-300 focus:border focus:w-80 focus:ring-1 sm:text-sm'
               placeholder='Search'
               type='text'
               name='search'
@@ -31,7 +31,7 @@ const Header = () => {
           </div>
         </div>
         {/* NAV */}
-        <div className='flex bottom-0 fixed lg:static w-full justify-around'>
+        <div className='flex bottom-0 fixed lg:static w-full justify-around left-0'>
           {/* NAVLISTWRAP */}
           <div className='px-2.5 flex justify-center'>
             <a
