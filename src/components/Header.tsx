@@ -26,7 +26,7 @@ const Header = () => {
               name='search'
             />
           </label>
-          <div className='absolute top-4 left-5'>
+          <div className='absolute lg:top-4 left-5 sm:top-1 md:top-3'>
             <img src='/images/search-icon.svg' alt='' />
           </div>
         </div>
@@ -91,6 +91,20 @@ const Header = () => {
                 Notifications
               </span>
             </a>
+          </div>
+          <div className='px-2.5 flex py-1'>
+            <a>
+              <img src='/images/user.svg' alt='' className='rounded-full w-6' />
+              <div className='flex cursor-pointer'>
+                <span className='text-normalTextHeader hover:text-focusTextHeader active:text-focusTextHeader text-xs'>
+                  Me
+                </span>
+                <img src='/images/down-icon.svg' alt='' />
+              </div>
+            </a>
+            {/* <div>
+              <a>Sign Out</a>
+            </div> */}
           </div>
         </div>
       </div>
