@@ -3,35 +3,35 @@ import React from 'react';
 const Header = () => {
   return (
     // CONTAINER
-    <div className='w-screen bg-white z-50 left-0 px-5 border border-b-gray-300 '>
+    <div className='w-screen bg-white z-50 left-0 lg:px-56 px-2 border border-b-gray-300 '>
       {/* CONTENT */}
       <div className='flex grow'>
         {/* LOGO */}
-        <div className='mr-0'>
+        <div className='mr-0.5 flex flex-col justify-center'>
           <a href='/home'>
             <img src='/images/home-logo.svg' alt='' className='max-w-none' />
           </a>
         </div>
         {/* SEARCH */}
-        <div className='relative'>
+        <div className='relative flex flex-col justify-center'>
           <label className='relative block pl-2'>
             <span className='sr-only'>Search</span>
             <span className='absolute inset-y-0 left-0 flex items-center pl-2 py-1.5'>
               <svg className='h-5 w-5 fill-gray-300' viewBox='0 0 20 20'></svg>
             </span>
             <input
-              className='placeholder:text-placeholderSearchColor w-56  pr-4 pl-10 h-9    leading-7 block bg-inputSearchBackground border rounded-sd   shadow-sm focus:outline-none focus:border-gray-300 focus:ring-gray-300 focus:border focus:w-80 focus:ring-1 sm:text-sm'
+              className='placeholder:text-placeholderSearchColor w-56 h-9  pr-2 pl-10 leading-7 block bg-inputSearchBackground border rounded-sd   shadow-sm focus:outline-none focus:border-gray-300 focus:ring-gray-300 focus:border lg:focus:w-80 focus:ring-1 sm:text-sm'
               placeholder='Search'
               type='text'
               name='search'
             />
           </label>
-          <div className='absolute top-2.5 left-5'>
+          <div className='absolute top-4 left-5'>
             <img src='/images/search-icon.svg' alt='' />
           </div>
         </div>
         {/* NAV */}
-        <div className='flex bottom-0 fixed lg:static sm:min-w-full min-w-full  md:min-w-full justify-around left-0'>
+        <div className='flex bottom-0 fixed lg:static w-full justify-around left-0'>
           {/* NAVLISTWRAP */}
           <div className='px-2.5 flex justify-center'>
             <a
