@@ -7,9 +7,9 @@ module.exports = {
     // height: {
     //   1.5: '1.5rem',
     // },
-    // minWidth: {
-    //   21: '21rem',
-    // },
+    minWidth: {
+      '1/2': '50%',
+    },
     extend: {
       colors: {
         normalTextHeader: 'rgba(0,0,0,0.6)',

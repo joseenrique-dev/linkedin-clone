@@ -13,7 +13,7 @@ const Header = () => {
           </a>
         </div>
         {/* SEARCH */}
-        <div className='relative flex flex-col justify-center'>
+        <div className='relative flex flex-col justify-center min-w-1/2'>
           <label className='relative block pl-2'>
             <span className='sr-only'>Search</span>
             <span className='absolute inset-y-0 left-0 flex items-center pl-2 py-1.5'>
@@ -31,9 +31,9 @@ const Header = () => {
           </div>
         </div>
         {/* NAV */}
-        <div className='flex bottom-0 fixed lg:static w-full justify-around left-0'>
+        <div className='flex bottom-0 fixed lg:static w-full justify-around left-0 border border-b-gray-300 bg-white lg:border-none lg:bg-transparent'>
           {/* NAVLISTWRAP */}
-          <div className='px-2.5 flex justify-center'>
+          <div className='px-2.5 flex py-1'>
             <a
               className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -44,7 +44,7 @@ const Header = () => {
               </span>
             </a>
           </div>
-          <div className='px-2.5 '>
+          <div className='px-2.5 flex py-1'>
             <a
               className='no-underline leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -55,7 +55,7 @@ const Header = () => {
               </span>
             </a>
           </div>
-          <div className='px-2.5'>
+          <div className='px-2.5 flex py-1'>
             <a
               className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -66,7 +66,7 @@ const Header = () => {
               </span>
             </a>
           </div>
-          <div className='px-2.5'>
+          <div className='px-2.5 flex py-1'>
             <a
               className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -77,7 +77,7 @@ const Header = () => {
               </span>
             </a>
           </div>
-          <div className='px-2.5'>
+          <div className='px-2.5 flex py-1'>
             <a
               className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
