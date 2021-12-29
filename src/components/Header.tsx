@@ -106,6 +106,15 @@ const Header = () => {
               <a>Sign Out</a>
             </div> */}
           </div>
+          <div className='px-2.5 flex py-1 border-l-zinc-400 border-l'>
+            <a>
+              <img src='/images/nav-work.svg' alt='' />
+              <span className='text-normalTextHeader hover:text-focusTextHeader active:text-focusTextHeader text-xs flex'>
+                Work
+                <img src='/images/down-icon.svg' alt='' />
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

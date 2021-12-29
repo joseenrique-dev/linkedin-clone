@@ -16,6 +16,7 @@ module.exports = {
         focusTextHeader: 'rgba(0,0,0,0.9)',
         inputSearchBackground: '#EEF3F8',
         placeholderSearchColor: '#606264',
+        navBorderLeftColor: '#EBEBEB',
       },
       minHeight: {
         3.25: '3.25rem',
