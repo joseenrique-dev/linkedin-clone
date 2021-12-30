@@ -92,7 +92,7 @@ const Header = () => {
               </span>
             </a>
           </div>
-          <div className='px-2.5 flex py-1'>
+          <div className='px-2.5 py-1 hidden lg:flex'>
             <a>
               <img src='/images/user.svg' alt='' className='rounded-full w-6' />
               <div className='flex cursor-pointer'>
@@ -106,7 +106,7 @@ const Header = () => {
               <a>Sign Out</a>
             </div> */}
           </div>
-          <div className='px-2.5 flex py-1 border-l-zinc-400 border-l'>
+          <div className='px-2.5 py-1 border-l-zinc-400 border-l hidden lg:flex'>
             <a>
               <img src='/images/nav-work.svg' alt='' />
               <span className='text-normalTextHeader hover:text-focusTextHeader active:text-focusTextHeader text-xs flex'>
