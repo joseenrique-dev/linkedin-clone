@@ -2,7 +2,7 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontSize: {
-      '12px': '13px',
+      '14px': '14px',
     },
     backgroundSize: {
       auto: 'auto',

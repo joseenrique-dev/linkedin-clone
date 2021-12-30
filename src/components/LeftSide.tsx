@@ -30,19 +30,19 @@ const LeftSide = () => {
             </div>
           </a>
           <a>
-            <span className='text-photoUserImageLink mt-1 text-12px leading-6 font-medium'>
+            <span className='text-photoUserImageLink mt-1 text-14px leading-6 font-medium'>
               Add a photo
             </span>
           </a>
         </div>
         {/* Widget */}
-        <div className='border-b pt-3 pb-3 '>
+        <div className='border-b pt-3 pb-3'>
           <a className='hover:bg-gray-300 no-underline flex content-center justify-between px-2.5 py-1'>
             <div className='flex flex-col text-left'>
-              <span className='text-12px font-semibold leading-6 text-gray-500'>
+              <span className='text-14px font-semibold leading-6 text-gray-500'>
                 Connections
               </span>
-              <span className='text-12px font-semibold leading-6 text-black'>
+              <span className='text-14px font-semibold leading-6 text-black'>
                 Grow your Network
               </span>
             </div>
@@ -51,28 +51,36 @@ const LeftSide = () => {
         </div>
         {/* Item */}
         <div className='px-2 py-5 hover:bg-gray-300'>
-          <span className='flex text-12px font-semibold'>
+          <span className='flex text-14px font-semibold'>
             <img src='/images/item-icon.svg' alt='' />
             My Items
           </span>
         </div>
       </div>
       {/* CommunityCard */}
-      <div className=' flex flex-col text-center overflow-hidden mb-2 bg-bgLeftSide rounded-lg shadow'>
-        <a>
-          <span>Groups</span>
-        </a>
-        <a>
-          <span>
-            Events
-            <img src='/images/plus-icon.svg' alt='' />
+      <div className='border-b pt-3 pb-3 flex flex-col items-start text-center overflow-hidden mb-2 bg-bgLeftSide rounded-lg shadow'>
+        <a className='px-2.5'>
+          <span className='text-14px font-semibold leading-6 text-black'>
+            Groups
           </span>
         </a>
-        <a>
-          <span>Follow Hashtags</span>
+        <a className='px-2.5 py-0.5 w-full'>
+          <div className='flex justify-between'>
+            <span className='text-14px font-semibold leading-6 text-black'>
+              Events
+            </span>
+            <img src='/images/plus-icon.svg' alt='' className='text-left' />
+          </div>
         </a>
-        <a>
-          <span>Discover more</span>
+        <a className='px-2.5 py-0.5'>
+          <span className='text-14px font-semibold leading-6 text-black'>
+            Follow Hashtags
+          </span>
+        </a>
+        <a className='px-2.5 pt-2 border-t w-full text-left'>
+          <span className='text-sm font-semibold leading-6 text-gray-500'>
+            Discover more
+          </span>
         </a>
       </div>
     </div>
