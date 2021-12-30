@@ -32,6 +32,8 @@ module.exports = {
         navBorderLeftColor: '#EBEBEB',
         bgLeftSide: '#fff',
         photoUserImageLink: '#0a66c2',
+        userConnTextFirstChild: 'rgba(0,0,0,0.6)',
+        userConnTextNthChild: 'rgba(0,0,0,0.1)',
       },
       minHeight: {
         3.25: '3.25rem',

@@ -6,7 +6,7 @@ const LeftSide = () => {
       {/* ArtCard */}
       <div className='text-center overflow-hidden mb-2 bg-bgLeftSide rounded-lg shadow'>
         {/* USER Info */}
-        <div className='border-b border-b-gray-400 px-2.5 pt-2.5 pb-4 break-words'>
+        <div className='border-b border-b-gray-200 px-2.5 pt-2.5 pb-4 break-words'>
           {/* Card Background */}
           <div
             style={{
@@ -20,7 +20,7 @@ const LeftSide = () => {
               style={{
                 backgroundImage: `url("/images/photo.svg")`,
               }}
-              className='shadow-none w-72px h-72px box-border bg-white bg-center bg-60% bg-no-repeat m-user-info-photo border-2 border-gray bg-clip-content'
+              className='shadow-none w-72px h-72px box-border bg-white bg-center bg-60% bg-no-repeat m-user-info-photo border-gray bg-clip-content rounded-full'
             >
               {' '}
             </div>
@@ -35,6 +35,45 @@ const LeftSide = () => {
             </span>
           </a>
         </div>
+        {/* Widget */}
+        <div className='border-b pt-3 pb-3 '>
+          <a className='hover:bg-gray-300 no-underline flex content-center justify-between px-2.5 py-1'>
+            <div className='flex flex-col text-left'>
+              <span className='text-12px font-semibold leading-6 text-gray-500'>
+                Connections
+              </span>
+              <span className='text-12px font-semibold leading-6 text-black'>
+                Grow your Network
+              </span>
+            </div>
+            <img src='/images/widget-icon.svg' alt='' />
+          </a>
+        </div>
+        {/* Item */}
+        <div className='px-2 py-5 hover:bg-gray-300'>
+          <span className='flex text-12px font-semibold'>
+            <img src='/images/item-icon.svg' alt='' />
+            My Items
+          </span>
+        </div>
+      </div>
+      {/* CommunityCard */}
+      <div className=' flex flex-col text-center overflow-hidden mb-2 bg-bgLeftSide rounded-lg shadow'>
+        <a>
+          <span>Groups</span>
+        </a>
+        <a>
+          <span>
+            Events
+            <img src='/images/plus-icon.svg' alt='' />
+          </span>
+        </a>
+        <a>
+          <span>Follow Hashtags</span>
+        </a>
+        <a>
+          <span>Discover more</span>
+        </a>
       </div>
     </div>
   );
