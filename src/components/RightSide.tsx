@@ -27,7 +27,8 @@ const Rightside = () => {
               <span className='text-base leading-6 font-semibold'>
                 #Linkedin
               </span>
-              <button className='bg-transparent box-border py-1 px-4  max-w-md max-h-md border-4 font-semibold border-gray-500 rounded-full text-rightSideButtonFollowText'>
+              <button className='bg-transparent box-border py-1 px-4  max-w-md max-h-md border-2 font-semibold border-gray-500 rounded-full text-rightSideButtonFollowText'>
+                <span className='mr-1 font-medium text-lg'>+</span>
                 Follow
               </button>
             </div>
@@ -44,21 +45,23 @@ const Rightside = () => {
             </a>
             <div className='flex flex-col items-center'>
               <span className='text-14px leading-6 font-semibold'>#Video</span>
-              <button className='bg-transparent box-border py-1 px-4 shadow-slate-500 max-w-md max-h-md border-4 font-semibold text-rightSideButtonFollowText border-gray-500 rounded-full'>
+              <button className='bg-transparent box-border py-1 px-4 shadow-slate-500 max-w-md max-h-md border-2 font-semibold text-rightSideButtonFollowText border-gray-500 rounded-full'>
+                <span className='mr-1 font-medium text-lg'>+</span>
                 Follow
               </button>
             </div>
           </li>
         </ul>
         {/* Recommendation */}
-        <div className='flex items-center text-blue-700 text-sm cursor-pointer font-medium'>
+        <div className='flex items-center text-gray-500 text-sm cursor-pointer font-medium'>
           View all recommendations
-          <img src='/images/right-icon.svg' alt='' />
+          <img className='ml-1' src='/images/right-icon.svg' alt='' />
         </div>
       </div>
       {/* BannerCard */}
       <div>
         <img
+          className='h-full w-full'
           src='https://static-exp1.licdn.com/scds/common/u/images/promo/ads/li_evergreen_jobs_ad_300x250_v1.jpg'
           alt=''
         />
