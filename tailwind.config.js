@@ -31,6 +31,7 @@ module.exports = {
       },
       width: {
         '72px': '4.5rem',
+        '50px': '50px',
       },
       margin: {
         'user-info': '-12px -12px 0',
@@ -47,6 +48,7 @@ module.exports = {
         userConnTextFirstChild: 'rgba(0,0,0,0.6)',
         userConnTextNthChild: 'rgba(0,0,0,0.1)',
         rightSideButtonFollowText: 'rgba(0, 0, 0, 0.6)',
+        mainTextColor: '#958b7b',
       },
       minHeight: {
         3.25: '3.25rem',
