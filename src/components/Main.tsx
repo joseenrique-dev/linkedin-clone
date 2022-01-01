@@ -5,7 +5,7 @@ const Main = () => {
     //Container
     <div className='w-full'>
       {/* ShareBox   */}
-      <div className='py-2 px-2 text-center overflow-visible mb-1 bg-white rounded-md relative border-none shadow-black flex flex-col text-mainTextColor '>
+      <div className='pt-3 px-2 text-center overflow-visible mb-1 bg-white rounded-md relative border-none shadow-black flex flex-col text-mainTextColor '>
         <div className='flex'>
           <img src='/images/user.svg' alt='' className='w-50px rounded-full' />
           <button className='bg-transparent border border-gray-400 w-full rounded-full mx-3 font-medium text-left pl-4'>
@@ -15,21 +15,76 @@ const Main = () => {
         <div className='flex  justify-around'>
           <button className='outline-none text-rightSideButtonFollowText text-sm leading-6 min-h-3.25 bg-transparent flex items-center'>
             <img src='/images/photo-icon.svg' alt='' className='m-auto' />
-            <span className='font-medium pl-3'>Photo</span>
+            <span className='font-medium pl-1'>Photo</span>
           </button>
           <button className='outline-none text-rightSideButtonFollowText text-sm leading-6 min-h-3.25 bg-transparent flex items-center'>
             <img src='/images/video-icon.svg' alt='' className='m-auto' />
-            <span className='font-medium pl-3'>Video</span>
+            <span className='font-medium pl-1'>Video</span>
           </button>
           <button className='outline-none text-rightSideButtonFollowText text-sm leading-6 min-h-3.25 bg-transparent flex items-center'>
             <img src='/images/event-icon.svg' alt='' className='m-auto' />
-            <span className='font-medium pl-3'>Event</span>
+            <span className='font-medium pl-1'>Event</span>
           </button>
           <button className='outline-none text-rightSideButtonFollowText text-sm leading-6 min-h-3.25 bg-transparent flex items-center'>
             <img src='/images/articule-icon.svg' alt='' className='m-auto' />
-            <span className='font-medium pl-3'>Write articles</span>
+            <span className='font-medium pl-1'>Write articles</span>
           </button>
         </div>
+      </div>
+
+      {/* Article */}
+      <div className=' text-center overflow-visible mb-1 bg-white rounded-md relative border-none shadow-black flex flex-col text-mainTextColor '>
+        {/* SharedActor */}
+        <div className='px-3 pr-10'>
+          <a className='flex flex-nowrap items-center no-underline mr-3 grow overflow-hidden'>
+            <img src='/images/user.svg' alt='' className='w-12 h-12' />
+            <div className='flex flex-col grow basis-0 ml-2 overflow-hidden text-left'>
+              <span className='text-sm font-bold text-textSharedActor'>
+                Title
+              </span>
+              <span className='text-xs font-bold text-normalTextHeader'>
+                Info
+              </span>
+              <span className='text-xs font-bold text-normalTextHeader'>
+                Date
+              </span>
+            </div>
+          </a>
+          <button className='absolute right-3 top-0 bg-transparent overflow-hidden'>
+            <img src='/images/ellipsis.svg' alt='' />
+          </button>
+        </div>
+        {/* Description */}
+        <div className='px-4 overflow-hidden text-rgbPNight text-base text-left'>
+          Description
+        </div>
+        {/* SharedImage */}
+        <a className='mt-2 w-full block relative bg-sharedBack'>
+          <img
+            src='/images/shared-image.jpg'
+            alt=''
+            className='object-contain w-full h-full'
+          />
+        </a>
+        {/* SocialSection */}
+        <div className=''>
+          <div className='flex justify-between py-1 px-4 border-b'>
+            <div className='flex cursor-pointer'>
+              <img src='/images/like.svg' alt='' />
+              <img src='/images/applause.svg' alt='' />
+              <img src='/images/heart.svg' alt='' />
+              <span className='text-rightSideButtonFollowText text-xs m-auto hover:text-blue-700 hover:underline  hover:decoration-blue-700'>
+                17
+              </span>
+            </div>
+            <div className='cursor-pointer'>
+              <span className='text-rightSideButtonFollowText text-xs m-auto hover:text-blue-700 hover:underline  hover:decoration-blue-700'>
+                2 comments
+              </span>
+            </div>
+          </div>
+        </div>
+        sadda
       </div>
     </div>
   );
