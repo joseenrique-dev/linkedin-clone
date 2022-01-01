@@ -1,6 +1,16 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    borderWidth: {
+      DEFAULT: '1px',
+      0: '0',
+      '': '',
+      2: '2px',
+      3: '3px',
+      4: '4px',
+      6: '6px',
+      8: '8px',
+    },
     fontSize: {
       xs: '.75rem',
       sm: '.875rem',
@@ -49,6 +59,10 @@ module.exports = {
         userConnTextNthChild: 'rgba(0,0,0,0.1)',
         rightSideButtonFollowText: 'rgba(0, 0, 0, 0.6)',
         mainTextColor: '#958b7b',
+        textSharedActor: 'rgb(0,0,0,1)',
+        rgbPNight: 'rgba(0, 0, 0, 0.9)',
+        sharedBack: '#f9fafb',
+        hrColor: '#e9e5df',
       },
       minHeight: {
         3.25: '3.25rem',
