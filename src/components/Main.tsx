@@ -86,24 +86,24 @@ const Main = () => {
         </div>
         {/* Panel Btns Shared */}
         <div>
-          <ul className='flex justify-between px-4 py-2 flex-wrap'>
-            <li className='flex justify-center items-center hover:bg-gray-200 p-2 rounded cursor-pointer'>
+          <div className='flex justify-between px-4 sm:px-1 lg:px-4  py-2 flex-wrap'>
+            <button className='flex justify-center items-center hover:bg-gray-200 p-2 rounded cursor-pointer'>
               <img src='/images/big-like.svg' alt='' />
               <span className='text-sm font-semibold pl-2'>Like</span>
-            </li>
-            <li className='flex justify-center items-center hover:bg-gray-200 p-2 rounded cursor-pointer'>
+            </button>
+            <button className='flex justify-center items-center hover:bg-gray-200 p-2 rounded cursor-pointer'>
               <img src='/images/big-comment.svg' alt='' />
               <span className='text-sm font-semibold pl-2'>Comment</span>
-            </li>
-            <li className='flex justify-center items-center hover:bg-gray-200 p-2 rounded cursor-pointer'>
+            </button>
+            <button className='flex justify-center items-center hover:bg-gray-200 p-2 rounded cursor-pointer'>
               <img src='/images/big-share.svg' alt='' />
               <span className='text-sm font-semibold pl-2'>Share</span>
-            </li>
-            <li className='flex justify-center items-center hover:bg-gray-200 p-2 rounded cursor-pointer'>
+            </button>
+            <button className='flex justify-center items-center hover:bg-gray-200 p-2 rounded cursor-pointer'>
               <img src='/images/big-send.svg' alt='' />
               <span className='text-sm font-semibold pl-2'>Send</span>
-            </li>
-          </ul>
+            </button>
+          </div>
         </div>
       </div>
     </div>
