@@ -67,8 +67,8 @@ const Main = () => {
           />
         </a>
         {/* SocialSection */}
-        <div className=''>
-          <div className='flex justify-between py-1 px-4 border-b'>
+        <div className='mx-4'>
+          <div className='flex justify-between py-1 border-b '>
             <div className='flex cursor-pointer'>
               <img src='/images/like.svg' alt='' />
               <img src='/images/applause.svg' alt='' />
@@ -84,7 +84,27 @@ const Main = () => {
             </div>
           </div>
         </div>
-        sadda
+        {/* Panel Btns Shared */}
+        <div>
+          <ul className='flex justify-between px-4 py-2 flex-wrap'>
+            <li className='flex justify-center items-center hover:bg-gray-200 p-2 rounded cursor-pointer'>
+              <img src='/images/big-like.svg' alt='' />
+              <span className='text-sm font-semibold pl-2'>Like</span>
+            </li>
+            <li className='flex justify-center items-center hover:bg-gray-200 p-2 rounded cursor-pointer'>
+              <img src='/images/big-comment.svg' alt='' />
+              <span className='text-sm font-semibold pl-2'>Comment</span>
+            </li>
+            <li className='flex justify-center items-center hover:bg-gray-200 p-2 rounded cursor-pointer'>
+              <img src='/images/big-share.svg' alt='' />
+              <span className='text-sm font-semibold pl-2'>Share</span>
+            </li>
+            <li className='flex justify-center items-center hover:bg-gray-200 p-2 rounded cursor-pointer'>
+              <img src='/images/big-send.svg' alt='' />
+              <span className='text-sm font-semibold pl-2'>Send</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
