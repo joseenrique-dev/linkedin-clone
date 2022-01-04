@@ -4,12 +4,6 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 export const signInAPI = () => {
   debugger;
   return (dispatch) => {
-    // auth
-    //   .signInWithPopup(provider)
-    //   .then((payload) => {
-    //     console.log('Payload', payload);
-    //   })
-    //   .catch((errors) => alert('ERRORS', errors));
     const auth = getAuth();
     signInWithPopup(auth, provider)
       .then((result) => {
