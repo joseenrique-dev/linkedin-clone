@@ -1,6 +1,6 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
-import { signInAPI } from '../app/actions';
+import { useDispatch, useSelector } from 'react-redux';
+import { signInAPI } from '../app/actions/user.action';
 // type IProps = {
 //   props?: any,
 // };
