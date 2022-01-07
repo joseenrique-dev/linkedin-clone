@@ -1,4 +1,5 @@
 import React from 'react';
+import PostModel from './PostModal';
 
 const Main = () => {
   return (
@@ -106,6 +107,7 @@ const Main = () => {
           </div>
         </div>
       </div>
+      <PostModel />
     </div>
   );
 };
