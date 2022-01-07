@@ -52,6 +52,7 @@ module.exports = {
       },
       colors: {
         normalTextHeader: 'rgba(0,0,0,0.6)',
+        modalBg: 'rgba(0,0,0,0.8)',
         focusTextHeader: 'rgba(0,0,0,0.9)',
         inputSearchBackground: '#EEF3F8',
         placeholderSearchColor: '#606264',
@@ -69,6 +70,10 @@ module.exports = {
       },
       minHeight: {
         3.25: '3.25rem',
+        '90%': '90%',
+      },
+      maxWidth: {
+        '552px': '552px',
       },
     },
   },
