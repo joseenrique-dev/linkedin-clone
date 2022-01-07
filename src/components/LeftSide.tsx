@@ -1,5 +1,7 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 const LeftSide = () => {
+  const userState = useSelector((state: any) => state.userState.user); //TODO:Search the firebase model instead of any
   return (
     // Container
     <div className='px-3'>
@@ -26,7 +28,11 @@ const LeftSide = () => {
             </div>
             {/* Link */}
             <div className='text-base leading-6 text-neutral-900 font-bold'>
-              Welcome there
+              Welcome, {
+                userState ? userState.displayName :
+                'there !'
+              }
+                
             </div>
           </a>
           <a>

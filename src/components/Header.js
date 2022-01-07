@@ -1,6 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import * as userAction from '../app/actions/user.action';
 
 const Header = () => {
+  const [navDropUser, setNavDropUser] = useState(false);
+  const userState = useSelector((state) => state.userState.user); //TODO:Search the firebase model instead of any
+  const dispatch = useDispatch();
+
+  /**
+   * Dispatch Firebase logOut
+   */
+  const handleLogOut = () =>{
+    dispatch(userAction.logOutApi());
+  }
+
   return (
     // CONTAINER
     <div className='w-screen bg-white z-50 left-0 lg:px-56 px-2 border border-b-gray-300 '>
@@ -33,7 +46,7 @@ const Header = () => {
         {/* NAV */}
         <div className='flex bottom-0 fixed lg:static w-full justify-around left-0 border border-b-gray-300 bg-white lg:border-none lg:bg-transparent'>
           {/* NAVLISTWRAP */}
-          <div className='px-2.5 flex py-1'>
+          <div className='px-2.5 flex pt-1 pb-[5.6px]'>
             <a
               className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -44,7 +57,7 @@ const Header = () => {
               </span>
             </a>
           </div>
-          <div className='px-2.5 flex py-1'>
+          <div className='px-2.5 flex pt-1 pb-[5.6px]'>
             <a
               className='no-underline leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -55,7 +68,7 @@ const Header = () => {
               </span>
             </a>
           </div>
-          <div className='px-2.5 flex py-1'>
+          <div className='px-2.5 flex pt-1 pb-[5.6px]'>
             <a
               className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -66,7 +79,7 @@ const Header = () => {
               </span>
             </a>
           </div>
-          <div className='px-2.5 flex py-1'>
+          <div className='px-2.5 flex pt-1 pb-[5.6px]'>
             <a
               className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -77,7 +90,7 @@ const Header = () => {
               </span>
             </a>
           </div>
-          <div className='px-2.5 flex py-1'>
+          <div className='px-2.5 flex pt-1 pb-[5.6px]'>
             <a
               className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -94,13 +107,23 @@ const Header = () => {
           </div>
           <div className='px-2.5 py-1 hidden lg:flex'>
             <a>
-              <img src='/images/user.svg' alt='' className='rounded-full w-6' />
+              {
+                userState ? 
+                <img src={userState.photoURL} alt='' className='rounded-full w-6' /> :
+                <img src='/images/user.svg' alt='' className='rounded-full w-6' />
+              }
               <div className='flex cursor-pointer'>
                 <span className='text-normalTextHeader hover:text-focusTextHeader active:text-focusTextHeader text-xs'>
                   Me
                 </span>
-                <img src='/images/down-icon.svg' alt='' />
+                <img src='/images/down-icon.svg' alt=''  onClick={(val)=>setNavDropUser(!navDropUser)}/>
               </div>
+              {
+                navDropUser &&
+                <div className='bg-white w-auto h-auto px-2 py-2 border absolute rounded-sm' onClick={handleLogOut}>
+                  <span className='text-normalTextHeader hover:text-focusTextHeader active:text-focusTextHeader hover:cursor-pointer hover:font-medium'>Log Out</span>
+                </div>
+              }
             </a>
             {/* <div>
               <a>Sign Out</a>

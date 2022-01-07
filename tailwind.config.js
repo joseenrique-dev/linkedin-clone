@@ -1,6 +1,16 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    borderWidth: {
+      DEFAULT: '1px',
+      0: '0',
+      '': '',
+      2: '2px',
+      3: '3px',
+      4: '4px',
+      6: '6px',
+      8: '8px',
+    },
     fontSize: {
       xs: '.75rem',
       sm: '.875rem',
@@ -26,11 +36,15 @@ module.exports = {
       '1/2': '50%',
     },
     extend: {
+      padding: {
+        '5.6px': '5.6px',
+      },
       height: {
         '72px': '4.5rem',
       },
       width: {
         '72px': '4.5rem',
+        '50px': '50px',
       },
       margin: {
         'user-info': '-12px -12px 0',
@@ -47,6 +61,11 @@ module.exports = {
         userConnTextFirstChild: 'rgba(0,0,0,0.6)',
         userConnTextNthChild: 'rgba(0,0,0,0.1)',
         rightSideButtonFollowText: 'rgba(0, 0, 0, 0.6)',
+        mainTextColor: '#958b7b',
+        textSharedActor: 'rgb(0,0,0,1)',
+        rgbPNight: 'rgba(0, 0, 0, 0.9)',
+        sharedBack: '#f9fafb',
+        hrColor: '#e9e5df',
       },
       minHeight: {
         3.25: '3.25rem',
