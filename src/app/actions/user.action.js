@@ -1,22 +1,46 @@
 import { auth, provider } from '../../firebase';
-import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from 'firebase/auth';
 
 export const loginActionTypes = {
   SET_USER: '[USER] SET_USER',
+  SIGNOUT_USER: '[USER] SIGNOUT_USER',
 };
 
-export const loginUser = (user) => ({
+export const loginUserAction = (user) => ({
   type: loginActionTypes.SET_USER,
   payload: user,
 });
 
+export const logOutAction = () =>({
+  type: loginActionTypes.SIGNOUT_USER
+})
+
+/**
+ * Sign Out from Firebase
+ */
+export const logOutApi = () =>{
+  return (dispatch)=>{
+    const auth = getAuth();
+    signOut(auth).then(() => {
+      // Sign-out successful.
+      dispatch(logOutAction());
+    }).catch((error) => {
+      // An error happened.
+    });
+  }
+}
+
+/**
+ * SignIn from Firebase
+ * @returns Firebase Auth Object
+ */
 export const signInAPI = () => {
   return (dispatch) => {
     const auth = getAuth();
     signInWithPopup(auth, provider)
       .then((result) => {
         console.log('User Auth::', result);
-        dispatch(loginUser(result.user));
+        dispatch(loginUserAction(result.user));
         // This gives you a Google Access Token. You can use it to access the Google API.
         // const credential = GoogleAuthProvider.credentialFromResult(result);
         // const token = credential.accessToken;

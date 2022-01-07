@@ -5,6 +5,11 @@ const INITIAL_STATE = {
 
 const userReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    case loginActionTypes.SIGNOUT_USER :
+      return {
+        ...state,
+        user:null
+      }
     case loginActionTypes.SET_USER:
       return {
         ...state,

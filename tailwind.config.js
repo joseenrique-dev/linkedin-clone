@@ -36,6 +36,7 @@ module.exports = {
       '1/2': '50%',
     },
     extend: {
+      display: ["group-hover"],
       height: {
         '72px': '4.5rem',
       },

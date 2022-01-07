@@ -1,9 +1,19 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import * as userAction from '../app/actions/user.action';
 
 const Header = () => {
-  const userState = useSelector((state: any) => state.userState.user); //TODO:Search the firebase model instead of any
-  
+  const [navDropUser, setNavDropUser] = useState(false);
+  const userState = useSelector((state) => state.userState.user); //TODO:Search the firebase model instead of any
+  const dispatch = useDispatch();
+
+  /**
+   * Dispatch Firebase logOut
+   */
+  const handleLogOut = () =>{
+    dispatch(userAction.logOutApi());
+  }
+
   return (
     // CONTAINER
     <div className='w-screen bg-white z-50 left-0 lg:px-56 px-2 border border-b-gray-300 '>
@@ -106,8 +116,14 @@ const Header = () => {
                 <span className='text-normalTextHeader hover:text-focusTextHeader active:text-focusTextHeader text-xs'>
                   Me
                 </span>
-                <img src='/images/down-icon.svg' alt='' />
+                <img src='/images/down-icon.svg' alt=''  onClick={(val)=>setNavDropUser(!navDropUser)}/>
               </div>
+              {
+                navDropUser &&
+                <div className='bg-white w-auto h-auto px-2 py-2 border absolute rounded-sm' onClick={handleLogOut}>
+                  <span className='text-normalTextHeader hover:text-focusTextHeader active:text-focusTextHeader hover:cursor-pointer hover:font-medium'>Log Out</span>
+                </div>
+              }
             </a>
             {/* <div>
               <a>Sign Out</a>
@@ -124,6 +140,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
