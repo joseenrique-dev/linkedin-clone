@@ -46,7 +46,7 @@ const Header = () => {
         {/* NAV */}
         <div className='flex bottom-0 fixed lg:static w-full justify-around left-0 border border-b-gray-300 bg-white lg:border-none lg:bg-transparent'>
           {/* NAVLISTWRAP */}
-          <div className='px-2.5 flex py-1'>
+          <div className='px-2.5 flex pt-1 pb-[5.6px]'>
             <a
               className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -57,7 +57,7 @@ const Header = () => {
               </span>
             </a>
           </div>
-          <div className='px-2.5 flex py-1'>
+          <div className='px-2.5 flex pt-1 pb-[5.6px]'>
             <a
               className='no-underline leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -68,7 +68,7 @@ const Header = () => {
               </span>
             </a>
           </div>
-          <div className='px-2.5 flex py-1'>
+          <div className='px-2.5 flex pt-1 pb-[5.6px]'>
             <a
               className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -79,7 +79,7 @@ const Header = () => {
               </span>
             </a>
           </div>
-          <div className='px-2.5 flex py-1'>
+          <div className='px-2.5 flex pt-1 pb-[5.6px]'>
             <a
               className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -90,7 +90,7 @@ const Header = () => {
               </span>
             </a>
           </div>
-          <div className='px-2.5 flex py-1'>
+          <div className='px-2.5 flex pt-1 pb-[5.6px]'>
             <a
               className='no-underline items-center leading-normal bg-transparent justify-center font-normal text-xs min-w-min min-h-min'
               href='/'
@@ -140,7 +140,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };
