@@ -1,6 +1,9 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
+  const userState = useSelector((state: any) => state.userState.user); //TODO:Search the firebase model instead of any
+  
   return (
     // CONTAINER
     <div className='w-screen bg-white z-50 left-0 lg:px-56 px-2 border border-b-gray-300 '>
@@ -94,7 +97,11 @@ const Header = () => {
           </div>
           <div className='px-2.5 py-1 hidden lg:flex'>
             <a>
-              <img src='/images/user.svg' alt='' className='rounded-full w-6' />
+              {
+                userState ? 
+                <img src={userState.photoURL} alt='' className='rounded-full w-6' /> :
+                <img src='/images/user.svg' alt='' className='rounded-full w-6' />
+              }
               <div className='flex cursor-pointer'>
                 <span className='text-normalTextHeader hover:text-focusTextHeader active:text-focusTextHeader text-xs'>
                   Me
