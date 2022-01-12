@@ -16,8 +16,10 @@ module.exports = {
       sm: '.875rem',
       tiny: '.875rem',
       base: '1rem',
+      'base-midle': '1.03rem',
       lg: '1.125rem',
       xl: '1.25rem',
+      '2x.5': '1.4rem',
       '2xl': '1.5rem',
       '3xl': '1.875rem',
       '4xl': '2.25rem',
@@ -44,7 +46,7 @@ module.exports = {
       },
       width: {
         '72px': '4.5rem',
-        '50px': '50px',
+        '62px': '62px',
       },
       margin: {
         'user-info': '-12px -12px 0',
@@ -67,13 +69,15 @@ module.exports = {
         rgbPNight: 'rgba(0, 0, 0, 0.9)',
         sharedBack: '#f9fafb',
         hrColor: '#e9e5df',
+        modalTitleColor: '#626262',
       },
       minHeight: {
         3.25: '3.25rem',
         '90%': '90%',
+        '200px': '200px',
       },
       maxWidth: {
-        '552px': '552px',
+        '600px': '600px',
       },
     },
   },
