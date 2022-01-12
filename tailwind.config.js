@@ -43,10 +43,13 @@ module.exports = {
       },
       height: {
         '72px': '4.5rem',
+        '18px': '18px',
       },
       width: {
         '72px': '4.5rem',
         '62px': '62px',
+        '35%': '35%',
+        '18px': '18px',
       },
       margin: {
         'user-info': '-12px -12px 0',

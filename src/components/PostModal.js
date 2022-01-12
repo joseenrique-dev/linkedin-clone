@@ -55,9 +55,75 @@ const PostModal = () => {
                 placeholder='What do you want to talk about ?'
               ></textarea>
               <div>
-                <button className='text-blue-600 font-semibold text-base-midle hover:bg-gray-200 hover:py-1 hover:px-2 hover:rounded-md'>
-                  Add hashtag
-                </button>
+                <div>
+                  <button className='ml-3 text-blue-600 font-semibold text-base-midle hover:bg-gray-200 hover:py-1 py-1 px-2 hover:px-2 hover:rounded-md mb-3'>
+                    Add hashtag
+                  </button>
+                </div>
+                <div className='flex justify-between flex-wrap'>
+                  <div className='flex border-r-2 border-r-gray-300'>
+                    <img
+                      src='/images/modal-img.svg'
+                      alt=''
+                      className='p-2 hover:bg-gray-300 hover:rounded-full cursor-pointer mr-3'
+                    />
+                    <img
+                      src='/images/modal-video.svg'
+                      alt=''
+                      className='p-2 hover:bg-gray-300 hover:rounded-full cursor-pointer mr-3'
+                    />
+                    <img
+                      src='/images/modal-paper.svg'
+                      alt=''
+                      className='p-2 hover:bg-gray-300 hover:rounded-full cursor-pointer mr-3'
+                    />
+                    <img
+                      src='/images/modal-bag.svg'
+                      alt=''
+                      className='p-2 hover:bg-gray-300 hover:rounded-full cursor-pointer mr-3'
+                    />
+                    <img
+                      src='/images/modal-diplome.svg'
+                      alt=''
+                      className='p-2 hover:bg-gray-300 hover:rounded-full cursor-pointer mr-3'
+                    />
+                    <img
+                      src='/images/modal-chart.svg'
+                      alt=''
+                      className='p-2 hover:bg-gray-300 hover:rounded-full cursor-pointer mr-3'
+                    />
+                    <img
+                      src='/images/modal-dots.svg'
+                      alt=''
+                      className='p-2 hover:bg-gray-300 hover:rounded-full cursor-pointer mr-3'
+                    />
+                  </div>
+                  <div className='flex justify-between w-35%'>
+                    <button className='flex items-center ml-3 text-blue-600 font-semibold text-base-midle hover:bg-gray-200 px-2 py-1 hover:py-1 hover:px-2 hover:rounded-full '>
+                      <img
+                        src='/images/modal-msg.svg'
+                        alt=''
+                        className='w-18px h-18px'
+                      />
+                      <span className='text-gray-500 text-base ml-2 font-semibold '>
+                        Anyone
+                      </span>
+                    </button>
+                    {/* <button className='flex items-center  hover:bg-gray-200 hover:rounded-full'>
+                      <img
+                        src='/images/modal-msg.svg'
+                        alt=''
+                        className='w-18px h-18px'
+                      />
+                      <span className='text-gray-500 text-base ml-2 font-semibold '>
+                        Anyone
+                      </span>
+                    </button> */}
+                    <button className='px-5 py-1 rounded-full bg-gray-200 cursor-not-allowed text-gray-500 text-base font-semibold'>
+                      <span>Post</span>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
