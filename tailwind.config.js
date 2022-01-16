@@ -48,6 +48,7 @@ module.exports = {
       width: {
         '72px': '4.5rem',
         '62px': '62px',
+        '50px': '50px',
         '35%': '35%',
         '18px': '18px',
       },

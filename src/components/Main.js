@@ -1,7 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PostModel from './PostModal';
 
 const Main = () => {
+  const [showModal, setShowModal] = useState('close');
+
+  const handledClick = (e) => {
+    debugger;
+    e.preventDefault();
+    if (e.target !== e.currentTarget) {
+      return;
+    }
+    switch (showModal) {
+      case 'open':
+        setShowModal('close');
+        break;
+      case 'close':
+        setShowModal('open');
+        break;
+
+      default:
+        setShowModal('close');
+        break;
+    }
+  };
   return (
     //Container
     <div className='w-full'>
@@ -9,7 +30,10 @@ const Main = () => {
       <div className='pt-3 px-2 text-center overflow-visible mb-1 bg-white rounded-md relative border-none shadow-black flex flex-col text-mainTextColor '>
         <div className='flex'>
           <img src='/images/user.svg' alt='' className='w-50px rounded-full' />
-          <button className='bg-transparent border border-gray-400 w-full rounded-full mx-3 font-medium text-left pl-4'>
+          <button
+            onClick={handledClick}
+            className='bg-transparent border border-gray-400 w-full rounded-full mx-3 font-medium text-left pl-4'
+          >
             Start a post
           </button>
         </div>
@@ -107,7 +131,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <PostModel />
+      <PostModel showModal={showModal} handledClick={handledClick} />
     </div>
   );
 };
