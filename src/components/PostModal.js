@@ -16,7 +16,7 @@ const PostModal = (props) => {
     //Container
     <div>
       {props.showModal === 'open' && (
-        <div className='fixed top-0 bottom-0 right-0 left-0 z-50 bg-modalBg '>
+        <div className='fixed top-0 bottom-0 right-0 left-0 z-50 bg-modalBg animate-fade'>
           {/* Content */}
           <div className='w-full max-w-600px max-h-90% bg-white relative flex flex-col top-8 mx-auto my-0 rounded-md '>
             {/* Header Modal */}
@@ -70,7 +70,7 @@ const PostModal = (props) => {
                   <textarea
                     value={editorText}
                     onChange={(e) => setEditorText(e.target.value)}
-                    class='min-h-200px w-full h-16 px-3 py-2 text-lg font-thin text-gray-500 placeholder-gray-500 border-none rounded-lg focus:outline-0 mt-2'
+                    className='min-h-200px w-full h-16 px-3 py-2 text-lg font-thin text-gray-500 placeholder-gray-500 border-none rounded-lg focus:outline-0 mt-2'
                     placeholder='What do you want to talk about ?'
                   ></textarea>
                   <div>
@@ -138,7 +138,14 @@ const PostModal = (props) => {
                         Anyone
                       </span>
                     </button> */}
-                        <button className='px-5 py-1 rounded-full bg-gray-200 cursor-not-allowed text-gray-500 text-base font-semibold'>
+                        <button
+                          disabled={!editorText}
+                          className={`px-5 py-1 m-auto rounded-full  ${
+                            !editorText
+                              ? 'cursor-not-allowed bg-gray-200'
+                              : 'bg-blue-700 text-white'
+                          } text-gray-500 text-base font-semibold`}
+                        >
                           <span>Post</span>
                         </button>
                       </div>

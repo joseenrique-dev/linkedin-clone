@@ -131,6 +131,7 @@ const Main = () => {
           </div>
         </div>
       </div>
+
       <PostModel showModal={showModal} handledClick={handledClick} />
     </div>
   );

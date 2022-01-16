@@ -38,6 +38,9 @@ module.exports = {
       '1/2': '50%',
     },
     extend: {
+      animation: {
+        fade: 'fadeOut 5s ease-in-out',
+      },
       padding: {
         '5.6px': '5.6px',
       },
