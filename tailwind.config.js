@@ -1,6 +1,16 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    borderRadius: {
+      none: '0',
+      sm: '0.125rem',
+      DEFAULT: '0.25rem',
+      md: '0.375rem',
+      lg: '0.5rem',
+      full: '9999px',
+      large: '12px',
+      '100%': '100%',
+    },
     borderWidth: {
       DEFAULT: '1px',
       0: '0',
@@ -45,15 +55,19 @@ module.exports = {
         '5.6px': '5.6px',
       },
       height: {
-        '72px': '4.5rem',
+        '15px': '15px',
         '18px': '18px',
+        '48px': '48px',
+        '72px': '4.5rem',
       },
       width: {
-        '72px': '4.5rem',
-        '62px': '62px',
-        '50px': '50px',
-        '35%': '35%',
+        '15px': '15px',
         '18px': '18px',
+        '35%': '35%',
+        '48px': '48px',
+        '50px': '50px',
+        '62px': '62px',
+        '72px': '4.5rem',
       },
       margin: {
         'user-info': '-12px -12px 0',
@@ -81,10 +95,14 @@ module.exports = {
       minHeight: {
         3.25: '3.25rem',
         '90%': '90%',
-        '200px': '200px',
+        '150px': '150px',
+      },
+      maxHeight: {
+        '60%': '60%',
       },
       maxWidth: {
         '600px': '600px',
+        '58ch': '58ch',
       },
     },
   },
