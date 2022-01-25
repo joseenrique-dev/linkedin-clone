@@ -44,9 +44,6 @@ module.exports = {
       contain: 'contain',
       '60%': '60%',
     },
-    minWidth: {
-      '1/2': '50%',
-    },
     extend: {
       animation: {
         fade: 'fadeOut 5s ease-in-out',
@@ -94,15 +91,20 @@ module.exports = {
       },
       minHeight: {
         3.25: '3.25rem',
-        '90%': '90%',
+        '90%': '80vh',
         '150px': '150px',
+        '58ch': '58ch',
+      },
+      minWidth: {
+        '1/2': '50%',
       },
       maxHeight: {
         '60%': '60%',
+        '90%': '80vh',
       },
       maxWidth: {
         '600px': '600px',
-        '58ch': '58ch',
+        '34%': '34%',
       },
     },
   },
